@@ -1,0 +1,13 @@
+.logo{
+    position: absolute;
+}
+.navbar{
+    background: url('../img/back/4.png') ;
+    background-size: 2550px;
+    background-color:#ffffff ;
+
+}
+.backmain{
+    background: url('../img/back/verde.webp') no-repeat ;
+    background-size: 1820px 1300px ;
+}
