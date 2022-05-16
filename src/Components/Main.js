@@ -9,23 +9,20 @@ import {
 
   export default function Main() {
     return (
-     <Flex  display='flex' h='1000' className='backmain'>
+     <Flex  display='flex' h='1000' className='backmain' >
            {data.fruitsdata.map((item,index)=>{
                 return(
-                  <CardFruit
+                  <CardFruit 
                    defaultValue={item.price} 
                    image={item.image} 
                    title={item.title} 
                    desc={item.desc} 
-                   price={item.price} 
+                   price={item.price}
+                   unit={item.unit} 
                    item={item} 
-                   key={index}/>)
-               
-           })}
-
-              
-              <Box w='2040px' h='990px' bg='green '>
-
+                   key={index} />)
+               })}   
+              <Box w='840px' h='990px' bg='green '>
       <Cart></Cart>          
     </Box>
 

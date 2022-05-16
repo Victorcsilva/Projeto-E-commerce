@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Main from './Components/Main';
 import {CartProvider} from "react-use-cart"
-
 
 function App() {
   return (
