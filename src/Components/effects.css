@@ -11,3 +11,21 @@
     background: url('../img/back/verde.webp') no-repeat ;
     background-size: 1820px 1300px ;
 }
+.desktop {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  @media(max-width: 480px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      /* ou inline, inline-block */
+    }
+  }

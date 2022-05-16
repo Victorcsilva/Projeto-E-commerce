@@ -47,7 +47,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('white.', )} px={4} className="navbar">
+      <Box bg={useColorModeValue('white.', )} px={4} className="navbar" > 
         <Flex marginLeft={600}  h={526} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -61,19 +61,19 @@ export default function Simple() {
               <img src={Logo} alt="logo" width={'900px'} position="absolute"/>
               <img src={Imglogo} className='logo' alt="logo" width={'400px'} />
               </Box>
-              <Box  display={'flex'}  alignItems={'center'} position='absolute' top={280} left={400}>
+              <Box  display={'flex'}  alignItems={'center'} position='absolute' top={280} left={510}>
                   <img src={maca} alt="logo" width={'300px'} position="absolute"/>
             </Box>
-            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={290} right={910}>
+            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={290} left={190}>
                   <img src={morango} alt="logo" width={'308px'} position="absolute"/>
             </Box>
-            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={300} right={800}>
+          {/*<Box  display={'flex'}  alignItems={'center'} position='absolute' top={300} right={800}>
                   <img src={coco} alt="logo" width={'180px'} position="absolute"/>
-            </Box>
-            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={70} right={4}>
-                  <img src={arvore} alt="logo" width={'800px'} position="absolute"/>
-            </Box>
-            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={300} left={300}>
+            </Box>*/}
+           {/*  <Box  display={'flex'}  alignItems={'center'} position='absolute' top={70} right={4}>
+                  <img src={arvore} alt="logo" width={'800px'} position="absolute"/> 
+            </Box>*/}
+            <Box  display={'flex'}  alignItems={'center'} position='absolute' top={300} left={420}>
                   <img src={banana} alt="logo" width={'180px'} position="absolute"/>
             </Box>
             <Box  display={'flex'}  alignItems={'center'}  position='absolute' left={300} top={435} >

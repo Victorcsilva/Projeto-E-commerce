@@ -2,22 +2,32 @@
 import {
     Box,
     Flex, 
-    Spacer,
   } from '@chakra-ui/react';
-  import Boxfruit from './Boxfruit';
+  import CardFruit from './CardFruit';
+  import data from './Fruit';
+  import Cart from './Cart';
 
   export default function Main() {
-    
     return (
      <Flex  display='flex' h='1000' className='backmain'>
-              <Boxfruit/>
-              <Boxfruit/>
-              <Boxfruit/>
-              <Boxfruit/>
-              <Boxfruit/>
-              <Boxfruit/>
+           {data.fruitsdata.map((item,index)=>{
+                return(
+                  <CardFruit
+                   defaultValue={item.price} 
+                   image={item.image} 
+                   title={item.title} 
+                   desc={item.desc} 
+                   price={item.price} 
+                   item={item} 
+                   key={index}/>)
+               
+           })}
+
+              
               <Box w='2040px' h='990px' bg='green '>
-    2</Box>
+
+      <Cart></Cart>          
+    </Box>
 
      </Flex>
         
