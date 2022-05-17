@@ -54,7 +54,7 @@ export default function Simple() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-                            <HStack alignItems={'center'}>
+      <HStack alignItems={'center'}>
                               <Box  display={'flex'}  alignItems={'center'}>
                                 <img src={Logo} alt="logo" width={'900px'} position="absolute"/>
                                 <img src={Imglogo} className='logo' alt="logo" width={'400px'} />
@@ -91,31 +91,24 @@ export default function Simple() {
                                   <NavLink key={link}>{link}</NavLink>
                                 ))}
                                 
-                              </HStack>
-                                    
-        
-          </HStack>
+                              </HStack>                      
+      </HStack>
           <Flex alignItems={'center'}>
                   <Menu>
-                  <MenuButton
-                    as={Button}
-                    rounded={'full'}
-                    variant={'link'}
-                    cursor={'pointer'}
-                    minW={280}
-                    width={10}>
-                  <Avatar
-                      size={'sm'}
-                      src={
-                        'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
-                      }
-                    
-                    />
-                  </MenuButton>
-                <MenuList>
-                <MenuItem>Home</MenuItem>
-                <MenuItem >Carrinho</MenuItem>
-              </MenuList>
+                       <MenuButton
+                                  as={Button}
+                                  rounded={'full'}
+                                  variant={'link'}
+                                  cursor={'pointer'}
+                                  minW={280}
+                                  width={10}>
+                       <Avatar size={'sm'}
+                      src={'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'} />
+                      </MenuButton>
+                   <MenuList>
+                   <MenuItem>Home</MenuItem>
+                   <MenuItem >Carrinho</MenuItem>
+                  </MenuList>
             </Menu>
           </Flex>
         </Flex>
